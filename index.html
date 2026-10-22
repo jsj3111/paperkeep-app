@@ -19,13 +19,16 @@
 <meta property="og:image:height" content="630">
 <meta property="og:url" content="https://jsj3111.github.io/paperkeep-app/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#3B3F9E">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#3B3F9E">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0B1117">
 <link rel="icon" href="assets/img/favicon.png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/pretendard/woff2-dynamic-subset/PretendardVariable.subset.0.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/fonts/pretendard/pretendardvariable-dynamic-subset.css">
 <link rel="stylesheet" href="assets/site.css">
-<style>:root{--grad:linear-gradient(135deg,#3B3F9E 0%,#6C63D9 100%);--accent:#3B3F9E;--accent-soft:rgba(59,63,158,.08);--accent-dark:#F4E9D8;--check:#3B3F9E;--glow-a:rgba(59,63,158,.14);--glow-b:rgba(244,233,216,.85);--icon-shadow:rgba(59,63,158,.45);--bg-soft:#FAF6EF;--dark:#1C1E4A}</style>
+<style>:root{--grad:linear-gradient(135deg,#3B3F9E 0%,#6C63D9 100%);--accent:#3B3F9E;--accent-soft:rgba(59,63,158,.08);--accent-dark:#F4E9D8;--check:#3B3F9E;--glow-a:rgba(59,63,158,.14);--glow-b:rgba(244,233,216,.85);--icon-shadow:rgba(59,63,158,.45);--bg-soft:#FAF6EF;--dark:#1C1E4A}
+@media (prefers-color-scheme:dark){:root{--accent:var(--accent-dark);--check:var(--accent-dark);--bg-soft:#121A23}}</style>
+<script src="assets/site.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">본문으로 건너뛰기</a>
@@ -69,7 +72,7 @@
 
 <section id="features">
   <div class="wrap">
-    <div class="feat">
+    <div class="feat reveal">
       <div>
         <span class="kicker">스캔</span>
         <h2>깨끗한 PDF로<br>스캔해요</h2>
@@ -77,7 +80,7 @@
 <ul><li>필터: 원본, 보정, 회색조, 흑백, 사진 — 문서 종류별로 마지막 선택을 기억해요</li><li>순서 바꾸기, 회전, 네 모서리로 다시 자르기, 실행 취소되는 삭제</li><li>사진 보관함 접근 권한 없이 가져오기</li><li>홈 화면·잠금 화면 위젯에서 바로 스캐너 열기</li></ul>      </div>
       <div class="shot"><div class="phone"><img src="assets/img/scan-ko.webp" alt="페이지 편집 화면에서 반듯하게 펴고 보정한 스캔" width="600" height="1304" loading="lazy" decoding="async"></div></div>
     </div>
-    <div class="feat rev">
+    <div class="feat reveal rev">
       <div class="shot"><div class="phone"><img src="assets/img/search-ko.webp" alt="주소 하나로 영수증, 임대차 계약서, 고지서, 명함을 찾은 검색 화면" width="600" height="1304" loading="lazy" decoding="async"></div></div>
       <div>
         <span class="kicker">검색</span>
@@ -85,7 +88,7 @@
         <p class="body">한국어, 일본어, 영어 글자를 iPhone 안에서 읽어요. 제목뿐 아니라 문서 안의 글자로도 찾을 수 있고, 검색은 무료예요.</p>
 <ul><li>문서 종류(영수증, 신분증, 명함, 계약서, 메모)와 제목을 제안해요. 둘 다 바꿀 수 있어요</li><li>페이지 텍스트 복사</li><li>Pro: 다른 앱에서도 글자로 찾을 수 있는 검색 가능한 PDF</li></ul>      </div>
     </div>
-    <div class="feat">
+    <div class="feat reveal">
       <div>
         <span class="kicker">마크업 · Pro</span>
         <h2>서명하고, 표시하고,<br>가려요</h2>
@@ -93,7 +96,7 @@
 <ul><li>합치기, 나누기, 페이지 추출</li><li>실제 크기를 먼저 보여 주는 용량 줄이기, 암호 설정</li><li>서명은 다음을 위해 이 iPhone 안에만 저장돼요</li></ul>      </div>
       <div class="shot"><div class="phone"><img src="assets/img/markup-ko.webp" alt="서명, 강조, 가리기를 넣은 마크업 화면" width="600" height="1304" loading="lazy" decoding="async"></div></div>
     </div>
-    <div class="feat rev">
+    <div class="feat reveal rev">
       <div class="shot"><div class="phone"><img src="assets/img/receipts-ko.webp" alt="날짜와 합계가 보이는 영수증 여섯 장, 영수증 스마트 폴더" width="600" height="1304" loading="lazy" decoding="async"></div></div>
       <div>
         <span class="kicker">영수증 · 명함 · 신분증</span>
@@ -106,10 +109,10 @@
 
 <section class="soft">
   <div class="wrap center">
-    <span class="kicker">사용 방법</span>
-    <h2>세 단계면 충분해요</h2>
+    <div class="reveal"><span class="kicker">사용 방법</span>
+    <h2>세 단계면 충분해요</h2></div>
     <div class="steps">
-<div class="step"><div class="n">1</div><h3>스캔하거나 가져오기</h3><p>여러 페이지를 이어서 찍거나, 사진과 파일에서 가져와요.</p></div><div class="step"><div class="n">2</div><h3>다듬고 저장</h3><p>자르고, 돌리고, 필터를 고르면 iPhone 안에 PDF로 저장돼요. 글자도 기기 안에서 읽어요.</p></div><div class="step"><div class="n">3</div><h3>찾고 공유</h3><p>문서 속 글자로 찾고, PDF·JPEG·PNG로 공유하거나 프린트해요. 워터마크는 없어요.</p></div>    </div>
+<div class="step reveal" style="--d:0"><div class="n">1</div><h3>스캔하거나 가져오기</h3><p>여러 페이지를 이어서 찍거나, 사진과 파일에서 가져와요.</p></div><div class="step reveal" style="--d:1"><div class="n">2</div><h3>다듬고 저장</h3><p>자르고, 돌리고, 필터를 고르면 iPhone 안에 PDF로 저장돼요. 글자도 기기 안에서 읽어요.</p></div><div class="step reveal" style="--d:2"><div class="n">3</div><h3>찾고 공유</h3><p>문서 속 글자로 찾고, PDF·JPEG·PNG로 공유하거나 프린트해요. 워터마크는 없어요.</p></div>    </div>
   </div>
 </section>
 
@@ -120,7 +123,7 @@
       <h2>문서는 iPhone 밖으로<br>나가지 않아요</h2>
       <p class="lead">Paperkeep에는 서버도, 계정도, 분석 도구도 없어요. 스캔, 글자 인식, 모든 도구, 검색이 이 iPhone 안에서 동작하고, 구매만 App Store가 처리해요.</p>
       <div class="pgrid">
-<div class="pcard"><b>업로드할 곳이 없어요</b><p>서버도 네트워크 코드도 없어요.</p></div><div class="pcard"><b>수집하는 데이터 없음</b><p>App Store 개인정보 라벨: 데이터 수집 안 함.</p></div><div class="pcard"><b>잠긴 iPhone에선 못 읽어요</b><p>iPhone이 잠겨 있는 동안 문서 파일은 읽을 수 없게 보호돼요.</p></div><div class="pcard"><b>위젯엔 제목만</b><p>위젯은 페이지나 글자를 보여 주지 않고, 잠근 문서는 아예 나타나지 않아요.</p></div>      </div>
+<div class="pcard reveal" style="--d:0"><b>업로드할 곳이 없어요</b><p>서버도 네트워크 코드도 없어요.</p></div><div class="pcard reveal" style="--d:1"><b>수집하는 데이터 없음</b><p>App Store 개인정보 라벨: 데이터 수집 안 함.</p></div><div class="pcard reveal" style="--d:2"><b>잠긴 iPhone에선 못 읽어요</b><p>iPhone이 잠겨 있는 동안 문서 파일은 읽을 수 없게 보호돼요.</p></div><div class="pcard reveal" style="--d:3"><b>위젯엔 제목만</b><p>위젯은 페이지나 글자를 보여 주지 않고, 잠근 문서는 아예 나타나지 않아요.</p></div>      </div>
     </div>
     <div class="shot"><div class="phone"><img src="assets/img/privacy-ko.webp" alt="업로드 없음, 계정 없음, 워터마크 없음을 안내하는 첫 화면" width="600" height="1304" loading="lazy" decoding="async"></div></div>
   </div>
@@ -128,22 +131,22 @@
 
 <section id="pricing">
   <div class="wrap center">
-    <span class="kicker">요금</span>
-    <h2>스캔은 무료,<br>PDF 도구는 Pro</h2>
+    <div class="reveal"><span class="kicker">요금</span>
+    <h2>스캔은 무료,<br>PDF 도구는 Pro</h2></div>
 <p class="lead">스캔, 저장, 정리, 검색, 공유와 프린트는 무료예요. 횟수 제한도 워터마크도 없어요. Pro는 검색 가능한 PDF, 서명·가리기 같은 PDF 도구, 신분증 모드, 영수증 CSV, 폴더 잠금을 더해요.</p>    <div class="plans">
-      <div class="plan hl">
+      <div class="plan reveal hl" style="--d:0">
 <span class="tag">기본</span>        <h3>Paperkeep Pro 주간</h3>
         <div class="price">₩5,500<span class="per"> / 주</span></div>
         <div class="per">매주 자동 갱신 · 언제든 해지 · 무료 체험 없음</div>
         <ul><li>모든 Pro 기능</li><li>이번 주만 필요할 때 알맞아요</li><li>언제든 해지</li></ul>
       </div>
-      <div class="plan">
+      <div class="plan reveal" style="--d:1">
         <h3>Paperkeep Pro 연간</h3>
         <div class="price">₩39,000<span class="per"> / 년</span></div>
         <div class="per">한국·일본 신규 구독자는 7일 무료 체험 후 연 ₩39,000 · 체험 종료 24시간 전 알림 선택 가능</div>
         <ul><li>모든 Pro 기능</li><li>매주 쓰신다면 연간이 더 저렴해요</li><li>언제든 해지</li></ul>
       </div>
-      <div class="plan">
+      <div class="plan reveal" style="--d:2">
         <h3>Paperkeep Pro 평생 이용</h3>
         <div class="price">₩59,000</div>
         <div class="per">한 번 결제 · 구독 아님</div>
@@ -156,8 +159,8 @@
 
 <section class="soft" id="faq">
   <div class="wrap">
-    <div class="center"><span class="kicker">자주 묻는 질문</span><h2>궁금한 점</h2></div>
-    <div class="faq">
+    <div class="center reveal"><span class="kicker">자주 묻는 질문</span><h2>궁금한 점</h2></div>
+    <div class="faq reveal">
 <details><summary>문서가 어디 저장되나요?</summary><p>파일 앱 › 나의 iPhone › Paperkeep에 일반 PDF로 저장돼요. 그곳에서 열고, 이름을 바꾸고, 옮기거나 복사해도 다음에 Paperkeep을 열면 바뀐 내용을 따라가요.</p></details>
 <details><summary>Paperkeep이 문서를 업로드하나요?</summary><p>아니요. Paperkeep에는 서버도 네트워크 코드도 없어요. 글자 인식과 검색도 이 iPhone 안에서 이뤄지고, 구매만 Apple의 App Store가 처리해요.</p></details>
 <details><summary>무료로 어디까지 쓸 수 있나요?</summary><p>스캔, 저장, 정리, 문서 속 글자 검색, PDF·JPEG·PNG 공유와 프린트, 명함을 연락처로 저장, 페이지 텍스트 복사, 앱 잠금은 무료예요. 무료로 내보내도 워터마크는 없어요. Pro는 검색 가능한 PDF, 서명·가리기 같은 PDF 도구, 신분증 모드, 영수증 CSV, 폴더 잠금, 파일 이름 규칙을 더해요.</p></details>
@@ -169,7 +172,7 @@
 </section>
 
 <div class="final">
-  <div class="wrap">
+  <div class="wrap reveal">
     <img src="assets/img/icon.webp" alt="Paperkeep" width="96" height="96" loading="lazy">
     <h2>내 서류는<br>내 iPhone에</h2>
     <p class="lead">곧 App Store에서 만나요.</p>

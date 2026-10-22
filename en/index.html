@@ -19,13 +19,16 @@
 <meta property="og:image:height" content="630">
 <meta property="og:url" content="https://jsj3111.github.io/paperkeep-app/en/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#3B3F9E">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#3B3F9E">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0B1117">
 <link rel="icon" href="../assets/img/favicon.png">
 <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
 <link rel="preload" href="../assets/fonts/pretendard/woff2-dynamic-subset/PretendardVariable.subset.0.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../assets/fonts/pretendard/pretendardvariable-dynamic-subset.css">
 <link rel="stylesheet" href="../assets/site.css">
-<style>:root{--grad:linear-gradient(135deg,#3B3F9E 0%,#6C63D9 100%);--accent:#3B3F9E;--accent-soft:rgba(59,63,158,.08);--accent-dark:#F4E9D8;--check:#3B3F9E;--glow-a:rgba(59,63,158,.14);--glow-b:rgba(244,233,216,.85);--icon-shadow:rgba(59,63,158,.45);--bg-soft:#FAF6EF;--dark:#1C1E4A}</style>
+<style>:root{--grad:linear-gradient(135deg,#3B3F9E 0%,#6C63D9 100%);--accent:#3B3F9E;--accent-soft:rgba(59,63,158,.08);--accent-dark:#F4E9D8;--check:#3B3F9E;--glow-a:rgba(59,63,158,.14);--glow-b:rgba(244,233,216,.85);--icon-shadow:rgba(59,63,158,.45);--bg-soft:#FAF6EF;--dark:#1C1E4A}
+@media (prefers-color-scheme:dark){:root{--accent:var(--accent-dark);--check:var(--accent-dark);--bg-soft:#121A23}}</style>
+<script src="../assets/site.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -69,7 +72,7 @@
 
 <section id="features">
   <div class="wrap">
-    <div class="feat">
+    <div class="feat reveal">
       <div>
         <span class="kicker">Scan</span>
         <h2>Scan to a<br>clean PDF</h2>
@@ -77,7 +80,7 @@
 <ul><li>Filters: Original, Enhance, Grayscale, Black &amp; White, Photo — remembered per document type</li><li>Reorder, rotate, re-crop with four corners, delete with Undo</li><li>Import photos without giving library access</li><li>Open the scanner from a Home Screen or Lock Screen widget</li></ul>      </div>
       <div class="shot"><div class="phone"><img src="../assets/img/scan-en.webp" alt="A scan straightened and enhanced in the page editor" width="600" height="1304" loading="lazy" decoding="async"></div></div>
     </div>
-    <div class="feat rev">
+    <div class="feat reveal rev">
       <div class="shot"><div class="phone"><img src="../assets/img/search-en.webp" alt="One address found inside a receipt, a lease, a bill and a business card" width="600" height="1304" loading="lazy" decoding="async"></div></div>
       <div>
         <span class="kicker">Search</span>
@@ -85,7 +88,7 @@
         <p class="body">Paperkeep reads English, Korean and Japanese on your iPhone, so you can find a document by the words inside it, not just its title. Search is free.</p>
 <ul><li>Suggests the type (receipt, ID, business card, contract, note) and a title — you can change both</li><li>Copy the text of a page</li><li>Pro: searchable PDFs that other apps can search too</li></ul>      </div>
     </div>
-    <div class="feat">
+    <div class="feat reveal">
       <div>
         <span class="kicker">Mark up · Pro</span>
         <h2>Sign, mark up<br>and black out</h2>
@@ -93,7 +96,7 @@
 <ul><li>Merge, split and extract pages</li><li>Compress with the real size shown first, or add a password</li><li>Your signature is saved on this iPhone only, for next time</li></ul>      </div>
       <div class="shot"><div class="phone"><img src="../assets/img/markup-en.webp" alt="Signature, highlight and a redaction in Mark Up" width="600" height="1304" loading="lazy" decoding="async"></div></div>
     </div>
-    <div class="feat rev">
+    <div class="feat reveal rev">
       <div class="shot"><div class="phone"><img src="../assets/img/receipts-en.webp" alt="The Receipts smart folder with six receipts, each with its date and total" width="600" height="1304" loading="lazy" decoding="async"></div></div>
       <div>
         <span class="kicker">Receipts, cards and IDs</span>
@@ -106,10 +109,10 @@
 
 <section class="soft">
   <div class="wrap center">
-    <span class="kicker">How it works</span>
-    <h2>Three steps</h2>
+    <div class="reveal"><span class="kicker">How it works</span>
+    <h2>Three steps</h2></div>
     <div class="steps">
-<div class="step"><div class="n">1</div><h3>Scan or import</h3><p>Scan several pages in a row, or bring them in from your photos and files.</p></div><div class="step"><div class="n">2</div><h3>Tidy up and save</h3><p>Crop, rotate and pick a filter. The document is saved as a PDF on your iPhone, and its text is read there too.</p></div><div class="step"><div class="n">3</div><h3>Find and share</h3><p>Find it by the words inside, then share or print it as PDF, JPEG or PNG — without a watermark.</p></div>    </div>
+<div class="step reveal" style="--d:0"><div class="n">1</div><h3>Scan or import</h3><p>Scan several pages in a row, or bring them in from your photos and files.</p></div><div class="step reveal" style="--d:1"><div class="n">2</div><h3>Tidy up and save</h3><p>Crop, rotate and pick a filter. The document is saved as a PDF on your iPhone, and its text is read there too.</p></div><div class="step reveal" style="--d:2"><div class="n">3</div><h3>Find and share</h3><p>Find it by the words inside, then share or print it as PDF, JPEG or PNG — without a watermark.</p></div>    </div>
   </div>
 </section>
 
@@ -120,7 +123,7 @@
       <h2>Your documents never<br>leave your iPhone</h2>
       <p class="lead">Paperkeep has no servers, no account and no analytics. Scanning, text recognition, every tool and search run on this iPhone; only the App Store handles purchases.</p>
       <div class="pgrid">
-<div class="pcard"><b>Nowhere to upload to</b><p>No servers and no networking code.</p></div><div class="pcard"><b>Data Not Collected</b><p>That&#39;s Paperkeep&#39;s App Store privacy label.</p></div><div class="pcard"><b>Unreadable while locked</b><p>Document files are protected while your iPhone is locked.</p></div><div class="pcard"><b>Titles only in widgets</b><p>Widgets never show pages or text, and locked documents don&#39;t appear at all.</p></div>      </div>
+<div class="pcard reveal" style="--d:0"><b>Nowhere to upload to</b><p>No servers and no networking code.</p></div><div class="pcard reveal" style="--d:1"><b>Data Not Collected</b><p>That&#39;s Paperkeep&#39;s App Store privacy label.</p></div><div class="pcard reveal" style="--d:2"><b>Unreadable while locked</b><p>Document files are protected while your iPhone is locked.</p></div><div class="pcard reveal" style="--d:3"><b>Titles only in widgets</b><p>Widgets never show pages or text, and locked documents don&#39;t appear at all.</p></div>      </div>
     </div>
     <div class="shot"><div class="phone"><img src="../assets/img/privacy-en.webp" alt="Welcome screen: no upload, no account, no watermark" width="600" height="1304" loading="lazy" decoding="async"></div></div>
   </div>
@@ -128,22 +131,22 @@
 
 <section id="pricing">
   <div class="wrap center">
-    <span class="kicker">Pricing</span>
-    <h2>Scanning is free.<br>Pro adds the PDF tools.</h2>
+    <div class="reveal"><span class="kicker">Pricing</span>
+    <h2>Scanning is free.<br>Pro adds the PDF tools.</h2></div>
 <p class="lead">Scanning, saving, organizing, search, sharing and printing are free, with no limits and no watermark. Pro adds searchable PDFs, PDF tools like signing and redaction, ID card mode, receipt CSV and locked folders.</p>    <div class="plans">
-      <div class="plan hl">
+      <div class="plan reveal hl" style="--d:0">
 <span class="tag">Most flexible</span>        <h3>Paperkeep Pro Weekly</h3>
         <div class="price">$4.99<span class="per"> / week</span></div>
         <div class="per">Renews weekly · cancel anytime · no free trial</div>
         <ul><li>Every Pro feature</li><li>For when you need it just this week</li><li>Cancel anytime</li></ul>
       </div>
-      <div class="plan">
+      <div class="plan reveal" style="--d:1">
         <h3>Paperkeep Pro Yearly</h3>
         <div class="price">$34.99<span class="per"> / year</span></div>
         <div class="per">Renews yearly · cancel anytime</div>
         <ul><li>Every Pro feature</li><li>Using it every week? Yearly costs less.</li><li>Cancel anytime</li></ul>
       </div>
-      <div class="plan">
+      <div class="plan reveal" style="--d:2">
         <h3>Paperkeep Pro Lifetime</h3>
         <div class="price">$49.99</div>
         <div class="per">Pay once · not a subscription</div>
@@ -156,8 +159,8 @@
 
 <section class="soft" id="faq">
   <div class="wrap">
-    <div class="center"><span class="kicker">FAQ</span><h2>Questions</h2></div>
-    <div class="faq">
+    <div class="center reveal"><span class="kicker">FAQ</span><h2>Questions</h2></div>
+    <div class="faq reveal">
 <details><summary>Where are my documents stored?</summary><p>In the Files app › On My iPhone › Paperkeep, as ordinary PDFs. Open, rename, move or copy them there, and Paperkeep follows the changes the next time you open it.</p></details>
 <details><summary>Does Paperkeep upload my documents?</summary><p>No. Paperkeep has no servers and no networking code. Text recognition and search run on your iPhone; only Apple&#39;s App Store handles purchases.</p></details>
 <details><summary>What&#39;s free?</summary><p>Scanning, saving, organizing, search inside documents, sharing and printing as PDF, JPEG or PNG, saving business cards to Contacts, copying a page&#39;s text and App Lock. Free exports never get a watermark. Pro adds searchable PDFs, PDF tools like signing and redaction, ID card mode, receipt CSV, locked folders and file-name patterns.</p></details>
@@ -169,7 +172,7 @@
 </section>
 
 <div class="final">
-  <div class="wrap">
+  <div class="wrap reveal">
     <img src="../assets/img/icon.webp" alt="Paperkeep" width="96" height="96" loading="lazy">
     <h2>Your papers, kept<br>on your iPhone</h2>
     <p class="lead">Coming soon to the App Store.</p>

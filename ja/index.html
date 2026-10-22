@@ -19,13 +19,16 @@
 <meta property="og:image:height" content="630">
 <meta property="og:url" content="https://jsj3111.github.io/paperkeep-app/ja/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#3B3F9E">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#3B3F9E">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0B1117">
 <link rel="icon" href="../assets/img/favicon.png">
 <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
 <link rel="preload" href="../assets/fonts/pretendard-jp/PretendardJPVariable.site.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../assets/fonts/pretendard-jp/pretendard-jp.css">
 <link rel="stylesheet" href="../assets/site.css">
-<style>:root{--grad:linear-gradient(135deg,#3B3F9E 0%,#6C63D9 100%);--accent:#3B3F9E;--accent-soft:rgba(59,63,158,.08);--accent-dark:#F4E9D8;--check:#3B3F9E;--glow-a:rgba(59,63,158,.14);--glow-b:rgba(244,233,216,.85);--icon-shadow:rgba(59,63,158,.45);--bg-soft:#FAF6EF;--dark:#1C1E4A}</style>
+<style>:root{--grad:linear-gradient(135deg,#3B3F9E 0%,#6C63D9 100%);--accent:#3B3F9E;--accent-soft:rgba(59,63,158,.08);--accent-dark:#F4E9D8;--check:#3B3F9E;--glow-a:rgba(59,63,158,.14);--glow-b:rgba(244,233,216,.85);--icon-shadow:rgba(59,63,158,.45);--bg-soft:#FAF6EF;--dark:#1C1E4A}
+@media (prefers-color-scheme:dark){:root{--accent:var(--accent-dark);--check:var(--accent-dark);--bg-soft:#121A23}}</style>
+<script src="../assets/site.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">本文へスキップ</a>
@@ -69,7 +72,7 @@
 
 <section id="features">
   <div class="wrap">
-    <div class="feat">
+    <div class="feat reveal">
       <div>
         <span class="kicker">スキャン</span>
         <h2>きれいなPDFに<br>スキャン</h2>
@@ -77,7 +80,7 @@
 <ul><li>フィルタ:オリジナル、補正、グレー、白黒、写真 — 書類の種類ごとに最後の選択を記憶</li><li>並べ替え、回転、4つの角での切り取り直し、取り消せる削除</li><li>写真ライブラリへのアクセスなしで読み込み</li><li>ホーム画面やロック画面のウィジェットからスキャナを開く</li></ul>      </div>
       <div class="shot"><div class="phone"><img src="../assets/img/scan-ja.webp" alt="ページ編集画面でまっすぐに補正したスキャン" width="600" height="1304" loading="lazy" decoding="async"></div></div>
     </div>
-    <div class="feat rev">
+    <div class="feat reveal rev">
       <div class="shot"><div class="phone"><img src="../assets/img/search-ja.webp" alt="1つの住所でレシート、賃貸契約書、請求書、名刺を見つけた検索画面" width="600" height="1304" loading="lazy" decoding="async"></div></div>
       <div>
         <span class="kicker">検索</span>
@@ -85,7 +88,7 @@
         <p class="body">日本語・韓国語・英語の文字をiPhone内で読み取ります。タイトルだけでなく書類の中の文字でも見つけられて、検索は無料です。</p>
 <ul><li>書類の種類(レシート、身分証、名刺、契約書、メモ)とタイトルを提案 — どちらも変更できます</li><li>ページのテキストをコピー</li><li>Pro:ほかのアプリでも文字で探せる、検索できるPDF</li></ul>      </div>
     </div>
-    <div class="feat">
+    <div class="feat reveal">
       <div>
         <span class="kicker">マークアップ · Pro</span>
         <h2>署名、書き込み、<br>黒塗り</h2>
@@ -93,7 +96,7 @@
 <ul><li>結合、分割、ページ抽出</li><li>書き出し前に実際のサイズを表示する圧縮、パスワード</li><li>署名は次回のために、このiPhoneの中だけに保存</li></ul>      </div>
       <div class="shot"><div class="phone"><img src="../assets/img/markup-ja.webp" alt="署名、ハイライト、黒塗りを入れたマークアップ画面" width="600" height="1304" loading="lazy" decoding="async"></div></div>
     </div>
-    <div class="feat rev">
+    <div class="feat reveal rev">
       <div class="shot"><div class="phone"><img src="../assets/img/receipts-ja.webp" alt="日付と合計が見えるレシート6枚、レシートのスマートフォルダ" width="600" height="1304" loading="lazy" decoding="async"></div></div>
       <div>
         <span class="kicker">レシート・名刺・身分証</span>
@@ -106,10 +109,10 @@
 
 <section class="soft">
   <div class="wrap center">
-    <span class="kicker">使い方</span>
-    <h2>3ステップで十分です</h2>
+    <div class="reveal"><span class="kicker">使い方</span>
+    <h2>3ステップで十分です</h2></div>
     <div class="steps">
-<div class="step"><div class="n">1</div><h3>スキャンか読み込み</h3><p>複数ページを続けて撮影するか、写真やファイルから読み込みます。</p></div><div class="step"><div class="n">2</div><h3>整えて保存</h3><p>切り取り、回転、フィルタを選ぶと、iPhone内にPDFとして保存。文字の読み取りもデバイス内です。</p></div><div class="step"><div class="n">3</div><h3>探して共有</h3><p>中の文字で探して、PDF・JPEG・PNGで共有やプリント。透かしは入りません。</p></div>    </div>
+<div class="step reveal" style="--d:0"><div class="n">1</div><h3>スキャンか読み込み</h3><p>複数ページを続けて撮影するか、写真やファイルから読み込みます。</p></div><div class="step reveal" style="--d:1"><div class="n">2</div><h3>整えて保存</h3><p>切り取り、回転、フィルタを選ぶと、iPhone内にPDFとして保存。文字の読み取りもデバイス内です。</p></div><div class="step reveal" style="--d:2"><div class="n">3</div><h3>探して共有</h3><p>中の文字で探して、PDF・JPEG・PNGで共有やプリント。透かしは入りません。</p></div>    </div>
   </div>
 </section>
 
@@ -120,7 +123,7 @@
       <h2>書類はiPhoneの外に<br>出ません</h2>
       <p class="lead">Paperkeepにはサーバーも、アカウントも、分析ツールもありません。スキャン、文字認識、すべてのツール、検索はこのiPhone内で動き、購入だけをApp Storeが扱います。</p>
       <div class="pgrid">
-<div class="pcard"><b>アップロード先がありません</b><p>サーバーもネットワークのコードもありません。</p></div><div class="pcard"><b>データの収集なし</b><p>App Storeのプライバシーラベル:データの収集なし。</p></div><div class="pcard"><b>ロック中は読めません</b><p>iPhoneがロックされている間、書類のファイルは読み取れないよう保護されます。</p></div><div class="pcard"><b>ウィジェットはタイトルだけ</b><p>ウィジェットはページや文字を表示せず、ロックした書類はそもそも表示されません。</p></div>      </div>
+<div class="pcard reveal" style="--d:0"><b>アップロード先がありません</b><p>サーバーもネットワークのコードもありません。</p></div><div class="pcard reveal" style="--d:1"><b>データの収集なし</b><p>App Storeのプライバシーラベル:データの収集なし。</p></div><div class="pcard reveal" style="--d:2"><b>ロック中は読めません</b><p>iPhoneがロックされている間、書類のファイルは読み取れないよう保護されます。</p></div><div class="pcard reveal" style="--d:3"><b>ウィジェットはタイトルだけ</b><p>ウィジェットはページや文字を表示せず、ロックした書類はそもそも表示されません。</p></div>      </div>
     </div>
     <div class="shot"><div class="phone"><img src="../assets/img/privacy-ja.webp" alt="アップロードなし・アカウントなし・透かしなしを伝える最初の画面" width="600" height="1304" loading="lazy" decoding="async"></div></div>
   </div>
@@ -128,22 +131,22 @@
 
 <section id="pricing">
   <div class="wrap center">
-    <span class="kicker">料金</span>
-    <h2>スキャンは無料。<br>PDFツールはProで</h2>
+    <div class="reveal"><span class="kicker">料金</span>
+    <h2>スキャンは無料。<br>PDFツールはProで</h2></div>
 <p class="lead">スキャン・保存・整理・検索・共有・プリントは無料。回数制限も透かしもありません。Proでは検索できるPDF、署名や黒塗りなどのPDFツール、身分証モード、レシートCSV、フォルダロックが使えます。</p>    <div class="plans">
-      <div class="plan hl">
+      <div class="plan reveal hl" style="--d:0">
 <span class="tag">基本</span>        <h3>Paperkeep Pro 週間</h3>
         <div class="price">¥700<span class="per"> / 週</span></div>
         <div class="per">毎週自動更新・いつでも解約・無料トライアルなし</div>
         <ul><li>すべてのPro機能</li><li>今週だけ必要なときに</li><li>いつでも解約</li></ul>
       </div>
-      <div class="plan">
+      <div class="plan reveal" style="--d:1">
         <h3>Paperkeep Pro 年間</h3>
         <div class="price">¥4,800<span class="per"> / 年</span></div>
         <div class="per">日本と韓国では新規登録者に7日間の無料トライアル、その後は年¥4,800・終了24時間前のお知らせを選べます</div>
         <ul><li>すべてのPro機能</li><li>毎週使うなら、年間のほうが安くなります</li><li>いつでも解約</li></ul>
       </div>
-      <div class="plan">
+      <div class="plan reveal" style="--d:2">
         <h3>Paperkeep Pro 買い切り</h3>
         <div class="price">¥7,500</div>
         <div class="per">一度の支払い・サブスクではありません</div>
@@ -156,8 +159,8 @@
 
 <section class="soft" id="faq">
   <div class="wrap">
-    <div class="center"><span class="kicker">よくある質問</span><h2>気になること</h2></div>
-    <div class="faq">
+    <div class="center reveal"><span class="kicker">よくある質問</span><h2>気になること</h2></div>
+    <div class="faq reveal">
 <details><summary>書類はどこに保存されますか?</summary><p>ファイルApp › このiPhone内 › Paperkeepに、普通のPDFとして保存されます。そこで開く、名前を変える、移動やコピーをしても、次にPaperkeepを開いたときに変更に追従します。</p></details>
 <details><summary>Paperkeepは書類をアップロードしますか?</summary><p>いいえ。Paperkeepにはサーバーもネットワークのコードもありません。文字認識と検索もこのiPhone内で行い、購入だけをAppleのApp Storeが扱います。</p></details>
 <details><summary>無料でどこまで使えますか?</summary><p>スキャン、保存、整理、書類の中の文字の検索、PDF・JPEG・PNGでの共有とプリント、名刺を連絡先に保存、ページのテキストのコピー、アプリのロックは無料です。無料の書き出しでも透かしは入りません。Proでは検索できるPDF、署名や黒塗りなどのPDFツール、身分証モード、レシートCSV、フォルダロック、ファイル名のルールが使えます。</p></details>
@@ -169,7 +172,7 @@
 </section>
 
 <div class="final">
-  <div class="wrap">
+  <div class="wrap reveal">
     <img src="../assets/img/icon.webp" alt="Paperkeep" width="96" height="96" loading="lazy">
     <h2>書類は、<br>自分のiPhoneに</h2>
     <p class="lead">まもなくApp Storeで公開します。</p>
