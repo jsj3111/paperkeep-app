@@ -63,7 +63,11 @@ p,li{text-wrap:pretty}
 .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding-top:72px;padding-bottom:72px}
 .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.8125rem;font-weight:700;letter-spacing:.01em;color:var(--accent);background:var(--accent-soft);padding:6px 12px;border-radius:999px}
 h1{font-size:clamp(2.375rem,5.4vw,4rem);line-height:1.08;letter-spacing:-.035em;font-weight:800;margin:16px 0;text-wrap:balance}
-h1 .g{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+h1 .g{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;white-space:nowrap}
+/* line breaks a language needs only on wide or narrow screens: [wide] / [narrow] in apps/<app>.yaml */
+.br-wide{display:none}
+.nw{white-space:nowrap}                      /* keep a phrase on one line: <span class="nw">…</span> */
+@media (min-width:900px){.br-wide{display:inline}.br-narrow{display:none}}
 .lead{font-size:clamp(1.0625rem,1.6vw,1.25rem);line-height:1.55;color:var(--ink-2);max-width:32.5em}
 .cta{display:flex;gap:16px;align-items:center;margin-top:32px;flex-wrap:wrap}
 .store{display:inline-flex;align-items:center;gap:10px;background:var(--btn-bg);color:var(--btn-fg);padding:12px 22px;border-radius:14px;font-weight:700;font-size:.9375rem}
@@ -95,7 +99,7 @@ section{padding:112px 0}
 .kicker{font-size:.8125rem;font-weight:800;letter-spacing:.06em;color:var(--accent);text-transform:uppercase}
 h2{font-size:clamp(1.875rem,3.6vw,2.75rem);line-height:1.15;letter-spacing:-.028em;font-weight:800;margin:8px 0 16px;text-wrap:balance}
 h3{line-height:1.35;letter-spacing:-.012em}
-html[lang="ja"] h1,html[lang="ja"] h2{letter-spacing:-.01em;line-height:1.22}
+html[lang="ja"] h1,html[lang="ja"] h2{letter-spacing:-.01em;line-height:1.22;word-break:auto-phrase}
 .feat{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
 .feat + .feat{margin-top:120px}
 .feat.rev .shot{order:2}
@@ -191,6 +195,14 @@ footer a{overflow-wrap:anywhere}
 .reveal{transition:opacity 520ms var(--ease-out),transform 520ms var(--ease-out);transition-delay:calc(var(--d,0) * 60ms)}
 .reveal.pending{opacity:0;transform:translate3d(0,16px,0)}
 
+/* wide desktops: a wider text column and a larger headline (mobile and tablet unchanged) */
+@media (min-width:1200px){
+  :root{--max:1240px}                          /* every .wrap, so the bar, hero and sections share one left edge */
+  .hero .wrap{grid-template-columns:minmax(0,1.45fr) minmax(0,.85fr)}
+  .hero h1{font-size:clamp(4rem,5.2vw,4.5rem)}
+  .band b{font-size:1.625rem}
+  .band p{font-size:.9375rem}
+}
 @media (max-width:900px){
   .hero .wrap,.feat,.priv{grid-template-columns:1fr;gap:40px}
   .feat.rev .shot{order:0}
