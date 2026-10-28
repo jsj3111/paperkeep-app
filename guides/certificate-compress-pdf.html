@@ -2,75 +2,10 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>아이폰에서 스캔한 PDF 용량 줄이기 (서류 제출 용량 제한)</title>
-<meta name="description" content="졸업증명서 같은 스캔 PDF가 업로드나 메일 용량 제한에 걸릴 때, 실제 크기를 미리 보고 줄여서 내보내는 방법.">
-<link rel="canonical" href="https://jsj3111.github.io/paperkeep-app/guides/certificate-compress-pdf.html">
-<link rel="alternate" hreflang="ko" href="https://jsj3111.github.io/paperkeep-app/guides/certificate-compress-pdf.html">
-<link rel="alternate" hreflang="ja" href="https://jsj3111.github.io/paperkeep-app/ja/guides/certificate-compress-pdf.html">
-<link rel="alternate" hreflang="en" href="https://jsj3111.github.io/paperkeep-app/en/guides/certificate-compress-pdf.html">
-<link rel="alternate" hreflang="x-default" href="https://jsj3111.github.io/paperkeep-app/en/guides/certificate-compress-pdf.html">
-<meta property="og:type" content="article">
-<meta property="og:title" content="아이폰에서 스캔한 PDF 용량 줄이기 (서류 제출 용량 제한)">
-<meta property="og:description" content="졸업증명서 같은 스캔 PDF가 업로드나 메일 용량 제한에 걸릴 때, 실제 크기를 미리 보고 줄여서 내보내는 방법.">
-<meta property="og:url" content="https://jsj3111.github.io/paperkeep-app/guides/certificate-compress-pdf.html">
-<meta name="twitter:card" content="summary">
-<link rel="stylesheet" href="../assets/guides.css">
-<style>:root{--accent:#3B3F9E}</style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "아이폰에서 스캔한 PDF 용량 줄이기 (서류 제출 용량 제한)", "description": "졸업증명서 같은 스캔 PDF가 업로드나 메일 용량 제한에 걸릴 때, 실제 크기를 미리 보고 줄여서 내보내는 방법.", "inLanguage": "ko", "dateModified": "2026-10-22", "author": {"@type": "Person", "name": "Andy Jae"}, "publisher": {"@type": "Person", "name": "Andy Jae"}, "mainEntityOfPage": "https://jsj3111.github.io/paperkeep-app/guides/certificate-compress-pdf.html"}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "홈", "item": "https://jsj3111.github.io/paperkeep-app/"}, {"@type": "ListItem", "position": 2, "name": "문서 스캔 가이드", "item": "https://jsj3111.github.io/paperkeep-app/guides/"}, {"@type": "ListItem", "position": 3, "name": "아이폰에서 스캔한 PDF 용량 줄이기 (서류 제출 용량 제한)", "item": "https://jsj3111.github.io/paperkeep-app/guides/certificate-compress-pdf.html"}]}</script>
+<link rel="canonical" href="https://paperkeep-app.pages.dev/guides/certificate-compress-pdf">
+<meta http-equiv="refresh" content="0; url=https://paperkeep-app.pages.dev/guides/certificate-compress-pdf">
 </head>
-<body>
-<main>
-<nav class="crumbs" data-boilerplate><a href="https://jsj3111.github.io/paperkeep-app/">홈</a> › <a href="https://jsj3111.github.io/paperkeep-app/guides/">문서 스캔 가이드</a> › <span>아이폰에서 스캔한 PDF 용량 줄이기 (서류 제출 용량 제한)</span></nav>
-<article>
-<h1>아이폰에서 스캔한 PDF 용량 줄이기 (서류 제출 용량 제한)</h1>
-<p class="updated" data-boilerplate>최종 수정 2026-10-22 · <span class="badge">Paperkeep Pro 기능</span></p>
-<p class="lead prose">입사 지원이나 학교 제출 페이지는 &#39;파일당 5MB 이하&#39;처럼 용량을 제한하는 경우가 많아요. Paperkeep Pro의 내보내기 화면은 &#39;원본&#39;, &#39;중간&#39;, &#39;작게&#39; 세 가지를 실제로 인코딩해 잰 용량을 먼저 보여 줘서, 여러 번 내보내 보며 맞출 필요가 없어요.</p>
-
-<section class="prose">
-<h2 data-boilerplate>먼저, iOS 기본 기능으로 하는 방법</h2>
-<ol>
-<li>파일 앱에는 PDF 용량을 줄이는 메뉴가 없어요.</li>
-<li>메일에 사진을 첨부하면 보낼 때 크기를 고를 수 있지만, PDF를 첨부했을 때는 그 선택지가 나오지 않아요.</li>
-<li>기본 앱으로 할 수 있는 건 다시 스캔하면서 컬러 대신 회색조나 흑백 필터를 고르는 정도이고, 그러면 파일이 작아지는 경우가 많아요.</li>
-</ol>
-</section>
-
-<section class="prose with-shots">
-<h2 data-boilerplate>Paperkeep으로 하는 방법</h2>
-<div class="steps-grid">
-<ol>
-<li>증명서 스캔을 연 다음, 요술봉 모양 &#39;도구&#39; 메뉴 맨 위에 있는 &#39;내보내기…&#39;를 눌러요.</li>
-<li>형식을 PDF 그대로 두면, 아래 &#39;크기&#39; 항목의 &#39;원본&#39;, &#39;중간&#39;, &#39;작게&#39; 옆에 각각의 실제 용량이 계산돼 나타나요.</li>
-<li>제한보다 작은 것 중 가장 큰 크기를 골라요. 대개 &#39;중간&#39;이면 작은 글씨도 충분히 읽혀요.</li>
-<li>&#39;공유&#39;로 메일에 첨부하거나, &#39;파일에 저장&#39;으로 저장한 뒤 지원 사이트에서 그 파일을 골라 올려요.</li>
-</ol>
-<img class="shot" src="img/02_privacy.webp" width="300" height="652" alt="Paperkeep 앱 화면">
-</div>
-</section>
-
-<section class="prose">
-<h2 data-boilerplate>이 문서만의 팁</h2>
-<ul>
-<li>&#39;작게&#39;를 골랐다면 도장이나 작은 글씨가 읽히는지 PDF를 확대해서 꼭 확인하세요. 제출처가 읽지 못하면 다시 내야 해요.</li>
-<li>여러 증명서를 한 파일로 내야 한다면 먼저 &#39;합치기&#39;로 묶은 뒤 크기를 고르세요. 합친 다음에 잰 용량이 실제로 올라갈 용량이에요.</li>
-<li>제출에 필요 없는 안내 페이지는 &#39;페이지 추출&#39;로 빼고 보내면 용량이 더 줄어요.</li>
-<li>내보낼 때 줄인 건 사본뿐이고, Paperkeep 안의 문서는 원래 화질 그대로 남아요.</li>
-</ul>
-</section>
-
-<section class="app" data-boilerplate>
-<p class="cta">곧 App Store에 출시돼요.</p>
-</section>
-
-<section class="related" data-boilerplate>
-<h2>다른 가이드</h2>
-<ul><li><a href="contract-scan-pdf.html">계약서 스캔해서 PDF로 보내기 (아이폰)</a></li><li><a href="contract-sign-pdf.html">아이폰에서 PDF 계약서에 서명하는 방법 (프린트 없이)</a></li><li><a href="contract-extract-pages.html">PDF에서 필요한 페이지만 추출하기 (계약서 일부만 보내기)</a></li><li><a href="receipt-scan-tax.html">종이 영수증 스캔해서 정리하기 (종합소득세·경비 증빙)</a></li><li><a href="receipt-csv-expenses.html">영수증 엑셀로 정리하기 (경비 정산용 CSV 만들기)</a></li></ul>
-<p><a href="./">전체 목록</a></p>
-</section>
-</article>
-</main>
-<footer data-boilerplate><p>© 2026 Andy Jae</p></footer>
-</body>
+<body><p><a href="https://paperkeep-app.pages.dev/guides/certificate-compress-pdf">아이폰에서 스캔한 PDF 용량 줄이기 (서류 제출 용량 제한)</a></p></body>
 </html>

@@ -2,76 +2,10 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>PDF에서 필요한 페이지만 추출하기 (계약서 일부만 보내기)</title>
-<meta name="description" content="긴 계약서 PDF에서 서명 페이지나 특약 페이지만 골라 새 PDF로 만드는 방법. 원래 문서의 페이지는 그대로 남아요.">
-<link rel="canonical" href="https://jsj3111.github.io/paperkeep-app/guides/contract-extract-pages.html">
-<link rel="alternate" hreflang="ko" href="https://jsj3111.github.io/paperkeep-app/guides/contract-extract-pages.html">
-<link rel="alternate" hreflang="ja" href="https://jsj3111.github.io/paperkeep-app/ja/guides/contract-extract-pages.html">
-<link rel="alternate" hreflang="en" href="https://jsj3111.github.io/paperkeep-app/en/guides/contract-extract-pages.html">
-<link rel="alternate" hreflang="x-default" href="https://jsj3111.github.io/paperkeep-app/en/guides/contract-extract-pages.html">
-<meta property="og:type" content="article">
-<meta property="og:title" content="PDF에서 필요한 페이지만 추출하기 (계약서 일부만 보내기)">
-<meta property="og:description" content="긴 계약서 PDF에서 서명 페이지나 특약 페이지만 골라 새 PDF로 만드는 방법. 원래 문서의 페이지는 그대로 남아요.">
-<meta property="og:url" content="https://jsj3111.github.io/paperkeep-app/guides/contract-extract-pages.html">
-<meta name="twitter:card" content="summary">
-<link rel="stylesheet" href="../assets/guides.css">
-<style>:root{--accent:#3B3F9E}</style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "PDF에서 필요한 페이지만 추출하기 (계약서 일부만 보내기)", "description": "긴 계약서 PDF에서 서명 페이지나 특약 페이지만 골라 새 PDF로 만드는 방법. 원래 문서의 페이지는 그대로 남아요.", "inLanguage": "ko", "dateModified": "2026-10-22", "author": {"@type": "Person", "name": "Andy Jae"}, "publisher": {"@type": "Person", "name": "Andy Jae"}, "mainEntityOfPage": "https://jsj3111.github.io/paperkeep-app/guides/contract-extract-pages.html"}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "홈", "item": "https://jsj3111.github.io/paperkeep-app/"}, {"@type": "ListItem", "position": 2, "name": "문서 스캔 가이드", "item": "https://jsj3111.github.io/paperkeep-app/guides/"}, {"@type": "ListItem", "position": 3, "name": "PDF에서 필요한 페이지만 추출하기 (계약서 일부만 보내기)", "item": "https://jsj3111.github.io/paperkeep-app/guides/contract-extract-pages.html"}]}</script>
+<link rel="canonical" href="https://paperkeep-app.pages.dev/guides/contract-extract-pages">
+<meta http-equiv="refresh" content="0; url=https://paperkeep-app.pages.dev/guides/contract-extract-pages">
 </head>
-<body>
-<main>
-<nav class="crumbs" data-boilerplate><a href="https://jsj3111.github.io/paperkeep-app/">홈</a> › <a href="https://jsj3111.github.io/paperkeep-app/guides/">문서 스캔 가이드</a> › <span>PDF에서 필요한 페이지만 추출하기 (계약서 일부만 보내기)</span></nav>
-<article>
-<h1>PDF에서 필요한 페이지만 추출하기 (계약서 일부만 보내기)</h1>
-<p class="updated" data-boilerplate>최종 수정 2026-10-22 · <span class="badge">Paperkeep Pro 기능</span></p>
-<p class="lead prose">은행이나 집주인이 계약서 전체가 아니라 특정 페이지만 달라고 할 때가 있어요. Paperkeep Pro의 &#39;페이지 추출&#39;은 체크한 페이지로 새 문서를 만들 뿐, 원래 계약서에서는 한 장도 빠지지 않아요. 한 지점에서 앞뒤로 딱 자르고 싶다면 &#39;나누기&#39;를 쓰면 돼요.</p>
-
-<section class="prose">
-<h2 data-boilerplate>먼저, iOS 기본 기능으로 하는 방법</h2>
-<ol>
-<li>파일 앱에서 PDF를 길게 눌러 &#39;복제&#39;로 사본을 만들어요.</li>
-<li>사본을 열고 페이지 썸네일 목록을 띄워요.</li>
-<li>필요 없는 페이지의 썸네일을 길게 눌러 &#39;삭제&#39;하는 걸 반복하면 원하는 페이지만 남아요.</li>
-<li>남길 페이지는 적고 지울 페이지가 많을수록 손이 많이 가는 방식이에요.</li>
-</ol>
-</section>
-
-<section class="prose with-shots">
-<h2 data-boilerplate>Paperkeep으로 하는 방법</h2>
-<div class="steps-grid">
-<ol>
-<li>Paperkeep에서 계약서를 열어요. 아직 Paperkeep에 없는 PDF라면 &#39;가져오기&#39; → &#39;파일에서&#39;로 먼저 불러와요.</li>
-<li>&#39;도구&#39; 버튼을 누르고 &#39;페이지 추출&#39;을 골라요.</li>
-<li>새 문서에 넣을 페이지를 탭해 체크해요. 이 계약서 자체의 페이지는 그대로 있어요.</li>
-<li>아래의 &#39;2페이지 추출&#39; 같은 버튼을 누르면, 제목 끝에 &#39;(발췌)&#39;가 붙은 새 문서가 목록에 생겨요.</li>
-<li>새 문서를 열어 공유 버튼으로 바로 보내거나, &#39;도구&#39; → &#39;내보내기…&#39;에서 용량을 줄여 보내요.</li>
-</ol>
-<img class="shot" src="img/04_markup.webp" width="300" height="652" alt="Paperkeep 앱 화면">
-</div>
-</section>
-
-<section class="prose">
-<h2 data-boilerplate>이 문서만의 팁</h2>
-<ul>
-<li>서명 페이지만 보낼 때도 계약 당사자와 날짜가 적힌 첫 페이지를 함께 넣으면 어떤 계약의 서명인지 분명해져요.</li>
-<li>&#39;나누기&#39;는 고른 페이지 뒤에서 문서를 둘로 잘라 뒷부분을 새 문서로 만들어요. 본문과 첨부 서류를 떼어 낼 때 편해요.</li>
-<li>추출한 문서는 원본과 별개의 PDF라서, 거기에 가리기나 서명을 해도 원래 계약서는 바뀌지 않아요.</li>
-</ul>
-</section>
-
-<section class="app" data-boilerplate>
-<p class="cta">곧 App Store에 출시돼요.</p>
-</section>
-
-<section class="related" data-boilerplate>
-<h2>다른 가이드</h2>
-<ul><li><a href="contract-scan-pdf.html">계약서 스캔해서 PDF로 보내기 (아이폰)</a></li><li><a href="contract-sign-pdf.html">아이폰에서 PDF 계약서에 서명하는 방법 (프린트 없이)</a></li><li><a href="receipt-scan-tax.html">종이 영수증 스캔해서 정리하기 (종합소득세·경비 증빙)</a></li><li><a href="receipt-csv-expenses.html">영수증 엑셀로 정리하기 (경비 정산용 CSV 만들기)</a></li><li><a href="id-card-scan-both-sides.html">신분증 사본 앞뒷면을 한 장으로 스캔하기 (아이폰)</a></li></ul>
-<p><a href="./">전체 목록</a></p>
-</section>
-</article>
-</main>
-<footer data-boilerplate><p>© 2026 Andy Jae</p></footer>
-</body>
+<body><p><a href="https://paperkeep-app.pages.dev/guides/contract-extract-pages">PDF에서 필요한 페이지만 추출하기 (계약서 일부만 보내기)</a></p></body>
 </html>

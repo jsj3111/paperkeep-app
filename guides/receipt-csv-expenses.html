@@ -2,75 +2,10 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>영수증 엑셀로 정리하기 (경비 정산용 CSV 만들기)</title>
-<meta name="description" content="스캔한 영수증의 날짜, 가게, 합계, 통화를 기간별 CSV로 내보내 엑셀이나 Numbers에서 경비 정산에 쓰는 방법.">
-<link rel="canonical" href="https://jsj3111.github.io/paperkeep-app/guides/receipt-csv-expenses.html">
-<link rel="alternate" hreflang="ko" href="https://jsj3111.github.io/paperkeep-app/guides/receipt-csv-expenses.html">
-<link rel="alternate" hreflang="ja" href="https://jsj3111.github.io/paperkeep-app/ja/guides/receipt-csv-expenses.html">
-<link rel="alternate" hreflang="en" href="https://jsj3111.github.io/paperkeep-app/en/guides/receipt-csv-expenses.html">
-<link rel="alternate" hreflang="x-default" href="https://jsj3111.github.io/paperkeep-app/en/guides/receipt-csv-expenses.html">
-<meta property="og:type" content="article">
-<meta property="og:title" content="영수증 엑셀로 정리하기 (경비 정산용 CSV 만들기)">
-<meta property="og:description" content="스캔한 영수증의 날짜, 가게, 합계, 통화를 기간별 CSV로 내보내 엑셀이나 Numbers에서 경비 정산에 쓰는 방법.">
-<meta property="og:url" content="https://jsj3111.github.io/paperkeep-app/guides/receipt-csv-expenses.html">
-<meta name="twitter:card" content="summary">
-<link rel="stylesheet" href="../assets/guides.css">
-<style>:root{--accent:#3B3F9E}</style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "영수증 엑셀로 정리하기 (경비 정산용 CSV 만들기)", "description": "스캔한 영수증의 날짜, 가게, 합계, 통화를 기간별 CSV로 내보내 엑셀이나 Numbers에서 경비 정산에 쓰는 방법.", "inLanguage": "ko", "dateModified": "2026-10-22", "author": {"@type": "Person", "name": "Andy Jae"}, "publisher": {"@type": "Person", "name": "Andy Jae"}, "mainEntityOfPage": "https://jsj3111.github.io/paperkeep-app/guides/receipt-csv-expenses.html"}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "홈", "item": "https://jsj3111.github.io/paperkeep-app/"}, {"@type": "ListItem", "position": 2, "name": "문서 스캔 가이드", "item": "https://jsj3111.github.io/paperkeep-app/guides/"}, {"@type": "ListItem", "position": 3, "name": "영수증 엑셀로 정리하기 (경비 정산용 CSV 만들기)", "item": "https://jsj3111.github.io/paperkeep-app/guides/receipt-csv-expenses.html"}]}</script>
+<link rel="canonical" href="https://paperkeep-app.pages.dev/guides/receipt-csv-expenses">
+<meta http-equiv="refresh" content="0; url=https://paperkeep-app.pages.dev/guides/receipt-csv-expenses">
 </head>
-<body>
-<main>
-<nav class="crumbs" data-boilerplate><a href="https://jsj3111.github.io/paperkeep-app/">홈</a> › <a href="https://jsj3111.github.io/paperkeep-app/guides/">문서 스캔 가이드</a> › <span>영수증 엑셀로 정리하기 (경비 정산용 CSV 만들기)</span></nav>
-<article>
-<h1>영수증 엑셀로 정리하기 (경비 정산용 CSV 만들기)</h1>
-<p class="updated" data-boilerplate>최종 수정 2026-10-22 · <span class="badge">Paperkeep Pro 기능</span></p>
-<p class="lead prose">한 달 치 영수증 금액을 엑셀에 하나씩 옮겨 적는 일은 생각보다 오래 걸려요. Paperkeep Pro의 &#39;CSV 내보내기&#39;는 고른 기간의 영수증을 한 장에 한 줄씩, 날짜·가게·합계·통화가 담긴 표 파일로 만들어 줘요. 파일은 공유하는 순간에만 만들어지고, 받을 곳은 직접 골라요.</p>
-
-<section class="prose">
-<h2 data-boilerplate>먼저, iOS 기본 기능으로 하는 방법</h2>
-<ol>
-<li>iOS 기본 앱에는 영수증 사진에서 금액을 뽑아 표로 만드는 기능이 없어요.</li>
-<li>Numbers 앱에 날짜·가게·금액 열을 만들고, 스캔해 둔 영수증을 보면서 직접 입력하는 게 기본 앱으로 할 수 있는 가장 확실한 방법이에요.</li>
-<li>입력을 마치면 Numbers의 내보내기 기능으로 Excel이나 CSV 파일을 만들 수 있어요.</li>
-</ol>
-</section>
-
-<section class="prose with-shots">
-<h2 data-boilerplate>Paperkeep으로 하는 방법</h2>
-<div class="steps-grid">
-<ol>
-<li>먼저 영수증을 스캔해 두세요. CSV에는 Paperkeep이 &#39;영수증&#39;으로 분류한 문서만 들어가요.</li>
-<li>&#39;영수증&#39; 스마트 폴더로 들어가요(첫 화면 &#39;스마트 폴더&#39; 아래에 있어요).</li>
-<li>오른쪽 위 표 모양의 &#39;CSV 내보내기&#39; 버튼을 눌러요.</li>
-<li>&#39;영수증 CSV&#39; 화면의 &#39;시작&#39;과 &#39;끝&#39;에서 정산할 기간을 정해요.</li>
-<li>&#39;공유&#39;를 누르고, 공유 시트에서 메일을 골라 경리 담당자에게 보내거나 &#39;파일에 저장&#39;으로 보관한 뒤 Numbers나 Excel에서 열어요.</li>
-</ol>
-<img class="shot" src="img/05_receipts.webp" width="300" height="652" alt="Paperkeep 앱 화면">
-</div>
-</section>
-
-<section class="prose">
-<h2 data-boilerplate>이 문서만의 팁</h2>
-<ul>
-<li>CSV의 금액은 Paperkeep이 읽은 합계예요. 제출 전에 비어 있거나 이상한 줄은 해당 영수증 이미지로 확인해 고치세요.</li>
-<li>영수증으로 분류되지 않은 스캔은 문서 화면의 &#39;종류&#39;에서 &#39;영수증&#39;으로 바꿔야 CSV에 들어가요.</li>
-<li>통화가 따로 한 열로 나오니, 출장에서 원화와 엔화, 달러가 섞여도 구분하기 쉬워요.</li>
-</ul>
-</section>
-
-<section class="app" data-boilerplate>
-<p class="cta">곧 App Store에 출시돼요.</p>
-</section>
-
-<section class="related" data-boilerplate>
-<h2>다른 가이드</h2>
-<ul><li><a href="receipt-scan-tax.html">종이 영수증 스캔해서 정리하기 (종합소득세·경비 증빙)</a></li><li><a href="contract-scan-pdf.html">계약서 스캔해서 PDF로 보내기 (아이폰)</a></li><li><a href="contract-sign-pdf.html">아이폰에서 PDF 계약서에 서명하는 방법 (프린트 없이)</a></li><li><a href="contract-extract-pages.html">PDF에서 필요한 페이지만 추출하기 (계약서 일부만 보내기)</a></li><li><a href="id-card-scan-both-sides.html">신분증 사본 앞뒷면을 한 장으로 스캔하기 (아이폰)</a></li></ul>
-<p><a href="./">전체 목록</a></p>
-</section>
-</article>
-</main>
-<footer data-boilerplate><p>© 2026 Andy Jae</p></footer>
-</body>
+<body><p><a href="https://paperkeep-app.pages.dev/guides/receipt-csv-expenses">영수증 엑셀로 정리하기 (경비 정산용 CSV 만들기)</a></p></body>
 </html>

@@ -2,75 +2,10 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>스캔한 PDF를 글자 검색되는 PDF로 만들기 (OCR PDF)</title>
-<meta name="description" content="강의 자료나 인쇄물 스캔에 보이지 않는 글자 층을 넣어, 다른 앱에서도 검색·복사되는 PDF로 내보내는 방법.">
-<link rel="canonical" href="https://jsj3111.github.io/paperkeep-app/guides/handout-searchable-pdf.html">
-<link rel="alternate" hreflang="ko" href="https://jsj3111.github.io/paperkeep-app/guides/handout-searchable-pdf.html">
-<link rel="alternate" hreflang="ja" href="https://jsj3111.github.io/paperkeep-app/ja/guides/handout-searchable-pdf.html">
-<link rel="alternate" hreflang="en" href="https://jsj3111.github.io/paperkeep-app/en/guides/handout-searchable-pdf.html">
-<link rel="alternate" hreflang="x-default" href="https://jsj3111.github.io/paperkeep-app/en/guides/handout-searchable-pdf.html">
-<meta property="og:type" content="article">
-<meta property="og:title" content="스캔한 PDF를 글자 검색되는 PDF로 만들기 (OCR PDF)">
-<meta property="og:description" content="강의 자료나 인쇄물 스캔에 보이지 않는 글자 층을 넣어, 다른 앱에서도 검색·복사되는 PDF로 내보내는 방법.">
-<meta property="og:url" content="https://jsj3111.github.io/paperkeep-app/guides/handout-searchable-pdf.html">
-<meta name="twitter:card" content="summary">
-<link rel="stylesheet" href="../assets/guides.css">
-<style>:root{--accent:#3B3F9E}</style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "스캔한 PDF를 글자 검색되는 PDF로 만들기 (OCR PDF)", "description": "강의 자료나 인쇄물 스캔에 보이지 않는 글자 층을 넣어, 다른 앱에서도 검색·복사되는 PDF로 내보내는 방법.", "inLanguage": "ko", "dateModified": "2026-10-22", "author": {"@type": "Person", "name": "Andy Jae"}, "publisher": {"@type": "Person", "name": "Andy Jae"}, "mainEntityOfPage": "https://jsj3111.github.io/paperkeep-app/guides/handout-searchable-pdf.html"}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "홈", "item": "https://jsj3111.github.io/paperkeep-app/"}, {"@type": "ListItem", "position": 2, "name": "문서 스캔 가이드", "item": "https://jsj3111.github.io/paperkeep-app/guides/"}, {"@type": "ListItem", "position": 3, "name": "스캔한 PDF를 글자 검색되는 PDF로 만들기 (OCR PDF)", "item": "https://jsj3111.github.io/paperkeep-app/guides/handout-searchable-pdf.html"}]}</script>
+<link rel="canonical" href="https://paperkeep-app.pages.dev/guides/handout-searchable-pdf">
+<meta http-equiv="refresh" content="0; url=https://paperkeep-app.pages.dev/guides/handout-searchable-pdf">
 </head>
-<body>
-<main>
-<nav class="crumbs" data-boilerplate><a href="https://jsj3111.github.io/paperkeep-app/">홈</a> › <a href="https://jsj3111.github.io/paperkeep-app/guides/">문서 스캔 가이드</a> › <span>스캔한 PDF를 글자 검색되는 PDF로 만들기 (OCR PDF)</span></nav>
-<article>
-<h1>스캔한 PDF를 글자 검색되는 PDF로 만들기 (OCR PDF)</h1>
-<p class="updated" data-boilerplate>최종 수정 2026-10-22 · <span class="badge">Paperkeep Pro 기능</span></p>
-<p class="lead prose">스캔한 PDF는 보기에는 글자지만 실제로는 사진이라, 다른 앱에서 검색하거나 복사할 수 없어요. Paperkeep Pro의 &#39;검색 가능한 텍스트&#39;는 iPhone 안에서 읽은 글자를 PDF에 보이지 않게 넣어서, 파일 앱 같은 PDF 뷰어에서도 단어로 찾을 수 있게 해요. Paperkeep 안에서 하는 검색은 Pro가 아니어도 쓸 수 있어요.</p>
-
-<section class="prose">
-<h2 data-boilerplate>먼저, iOS 기본 기능으로 하는 방법</h2>
-<ol>
-<li>iOS 기본 앱에는 스캔한 PDF에 글자 층을 넣는 메뉴가 따로 없어요.</li>
-<li>메모 앱에 스캔해 두면 메모 검색으로 스캔 속 글자를 찾을 수 있지만, 그건 메모 앱 안에서만이에요.</li>
-<li>사진이나 화면 속 글자를 길게 눌러 선택하고 복사하는 기능은 있지만, 한 화면씩이라 긴 자료 전체를 옮기기엔 번거로워요.</li>
-</ol>
-</section>
-
-<section class="prose with-shots">
-<h2 data-boilerplate>Paperkeep으로 하는 방법</h2>
-<div class="steps-grid">
-<ol>
-<li>강의 자료를 &#39;스캔&#39;으로 찍고 &#39;저장&#39;해요. &#39;흑백&#39;이나 &#39;회색조&#39; 필터로 글자를 또렷하게 해 두면 인식에 도움이 돼요.</li>
-<li>내보내기 화면은 자료 문서의 &#39;도구&#39; → &#39;내보내기…&#39;에 있어요.</li>
-<li>&#39;검색 가능한 텍스트&#39; 스위치를 켜요. 이 스위치는 형식이 &#39;PDF&#39;일 때만 보여요.</li>
-<li>&#39;파일에 저장&#39;으로 원하는 폴더에 넣거나 &#39;공유&#39;로 다른 앱에 보내요. 그 PDF에서는 단어를 검색하고 문장을 선택해 복사할 수 있어요.</li>
-<li>Pro를 쓰는 동안 &#39;설정&#39;의 &#39;검색 가능한 텍스트&#39;를 켜 두면, 파일 앱 › 나의 iPhone › Paperkeep에 있는 PDF에도 글자 층이 들어가요.</li>
-</ol>
-<img class="shot" src="img/03_search.webp" width="300" height="652" alt="Paperkeep 앱 화면">
-</div>
-</section>
-
-<section class="prose">
-<h2 data-boilerplate>이 문서만의 팁</h2>
-<ul>
-<li>글자 층은 Paperkeep이 읽은 결과 그대로라 틀린 글자가 섞일 수 있어요. 인용할 문장은 원본 이미지와 대조하세요.</li>
-<li>글자 층은 눈에 보이지 않아서, 화면으로 보든 인쇄하든 원래 스캔과 똑같아요.</li>
-<li>스캔한 뒤 회전하거나 자르면 Paperkeep이 글자를 다시 읽어요. 다 읽은 뒤에 내보내야 위치가 맞는 글자 층이 들어가요.</li>
-</ul>
-</section>
-
-<section class="app" data-boilerplate>
-<p class="cta">곧 App Store에 출시돼요.</p>
-</section>
-
-<section class="related" data-boilerplate>
-<h2>다른 가이드</h2>
-<ul><li><a href="contract-scan-pdf.html">계약서 스캔해서 PDF로 보내기 (아이폰)</a></li><li><a href="contract-sign-pdf.html">아이폰에서 PDF 계약서에 서명하는 방법 (프린트 없이)</a></li><li><a href="contract-extract-pages.html">PDF에서 필요한 페이지만 추출하기 (계약서 일부만 보내기)</a></li><li><a href="receipt-scan-tax.html">종이 영수증 스캔해서 정리하기 (종합소득세·경비 증빙)</a></li><li><a href="receipt-csv-expenses.html">영수증 엑셀로 정리하기 (경비 정산용 CSV 만들기)</a></li></ul>
-<p><a href="./">전체 목록</a></p>
-</section>
-</article>
-</main>
-<footer data-boilerplate><p>© 2026 Andy Jae</p></footer>
-</body>
+<body><p><a href="https://paperkeep-app.pages.dev/guides/handout-searchable-pdf">스캔한 PDF를 글자 검색되는 PDF로 만들기 (OCR PDF)</a></p></body>
 </html>

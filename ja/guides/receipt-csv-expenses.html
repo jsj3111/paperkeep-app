@@ -2,75 +2,10 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>レシートをExcelにまとめる方法（経費精算用CSV）</title>
-<meta name="description" content="スキャンしたレシートの日付・店名・合計・通貨を期間ごとにCSVで書き出し、ExcelやNumbersで経費精算に使う方法。">
-<link rel="canonical" href="https://jsj3111.github.io/paperkeep-app/ja/guides/receipt-csv-expenses.html">
-<link rel="alternate" hreflang="ko" href="https://jsj3111.github.io/paperkeep-app/guides/receipt-csv-expenses.html">
-<link rel="alternate" hreflang="ja" href="https://jsj3111.github.io/paperkeep-app/ja/guides/receipt-csv-expenses.html">
-<link rel="alternate" hreflang="en" href="https://jsj3111.github.io/paperkeep-app/en/guides/receipt-csv-expenses.html">
-<link rel="alternate" hreflang="x-default" href="https://jsj3111.github.io/paperkeep-app/en/guides/receipt-csv-expenses.html">
-<meta property="og:type" content="article">
-<meta property="og:title" content="レシートをExcelにまとめる方法（経費精算用CSV）">
-<meta property="og:description" content="スキャンしたレシートの日付・店名・合計・通貨を期間ごとにCSVで書き出し、ExcelやNumbersで経費精算に使う方法。">
-<meta property="og:url" content="https://jsj3111.github.io/paperkeep-app/ja/guides/receipt-csv-expenses.html">
-<meta name="twitter:card" content="summary">
-<link rel="stylesheet" href="../../assets/guides.css">
-<style>:root{--accent:#3B3F9E}</style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "レシートをExcelにまとめる方法（経費精算用CSV）", "description": "スキャンしたレシートの日付・店名・合計・通貨を期間ごとにCSVで書き出し、ExcelやNumbersで経費精算に使う方法。", "inLanguage": "ja", "dateModified": "2026-10-22", "author": {"@type": "Person", "name": "Andy Jae"}, "publisher": {"@type": "Person", "name": "Andy Jae"}, "mainEntityOfPage": "https://jsj3111.github.io/paperkeep-app/ja/guides/receipt-csv-expenses.html"}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://jsj3111.github.io/paperkeep-app/ja/"}, {"@type": "ListItem", "position": 2, "name": "書類スキャンのガイド", "item": "https://jsj3111.github.io/paperkeep-app/ja/guides/"}, {"@type": "ListItem", "position": 3, "name": "レシートをExcelにまとめる方法（経費精算用CSV）", "item": "https://jsj3111.github.io/paperkeep-app/ja/guides/receipt-csv-expenses.html"}]}</script>
+<link rel="canonical" href="https://paperkeep-app.pages.dev/ja/guides/receipt-csv-expenses">
+<meta http-equiv="refresh" content="0; url=https://paperkeep-app.pages.dev/ja/guides/receipt-csv-expenses">
 </head>
-<body>
-<main>
-<nav class="crumbs" data-boilerplate><a href="https://jsj3111.github.io/paperkeep-app/ja/">ホーム</a> › <a href="https://jsj3111.github.io/paperkeep-app/ja/guides/">書類スキャンのガイド</a> › <span>レシートをExcelにまとめる方法（経費精算用CSV）</span></nav>
-<article>
-<h1>レシートをExcelにまとめる方法（経費精算用CSV）</h1>
-<p class="updated" data-boilerplate>最終更新 2026-10-22 · <span class="badge">Paperkeep Pro の機能</span></p>
-<p class="lead prose">1か月分のレシートの金額をExcelに手で打ち込むのは、思った以上に時間がかかります。Paperkeep Proの「CSVを書き出す」は、選んだ期間のレシートを1枚1行で、日付・店名・合計・通貨の表にまとめます。ファイルは共有するときにだけ作られ、渡す先は自分で選びます。</p>
-
-<section class="prose">
-<h2 data-boilerplate>まずは iOS の標準機能でやる方法</h2>
-<ol>
-<li>iOSの標準Appには、レシートの写真から金額を取り出して表にする機能はありません。</li>
-<li>Numbersで日付・店名・金額の列を作り、スキャンしたレシートを見ながら手入力するのが、標準Appでできる確実な方法です。</li>
-<li>入力し終えたら、Numbersの書き出し機能でExcelやCSVのファイルにできます。</li>
-</ol>
-</section>
-
-<section class="prose with-shots">
-<h2 data-boilerplate>Paperkeep でやる方法</h2>
-<div class="steps-grid">
-<ol>
-<li>先にレシートをスキャンしておきます。CSVに入るのは、Paperkeepが「レシート」に分類した書類だけです。</li>
-<li>「レシート」のスマートフォルダ（最初の画面の「スマートフォルダ」内）に入ります。</li>
-<li>右上の表の形をした「CSVを書き出す」ボタンをタップします。</li>
-<li>「レシートをCSVで」画面の「開始」と「終了」で、精算する期間を決めます。</li>
-<li>「共有」をタップし、共有シートでメールを選んで経理担当に送るか、「ファイルに保存」で保存してからNumbersやExcelで開きます。</li>
-</ol>
-<img class="shot" src="img/05_receipts.webp" width="300" height="652" alt="Paperkeep の画面">
-</div>
-</section>
-
-<section class="prose">
-<h2 data-boilerplate>この書類ならではのコツ</h2>
-<ul>
-<li>CSVの金額はPaperkeepが読み取った合計です。提出前に、空欄や不自然な行はレシートの画像で確かめて直してください。</li>
-<li>レシートに分類されていないスキャンは、書類画面の「種類」で「レシート」に変えるとCSVに入ります。</li>
-<li>通貨が別の列になるので、出張で円・ウォン・ドルが混ざっても見分けやすくなります。</li>
-</ul>
-</section>
-
-<section class="app" data-boilerplate>
-<p class="cta">まもなく App Store で公開します。</p>
-</section>
-
-<section class="related" data-boilerplate>
-<h2>ほかのガイド</h2>
-<ul><li><a href="receipt-scan-tax.html">確定申告のレシート・領収書をスキャンして整理する方法</a></li><li><a href="contract-scan-pdf.html">契約書をiPhoneでスキャンしてPDFで送る方法</a></li><li><a href="contract-sign-pdf.html">iPhoneでPDFの契約書に手書きで署名する方法（印刷不要）</a></li><li><a href="contract-extract-pages.html">PDFから必要なページだけを抜き出す方法（契約書の一部を送る）</a></li><li><a href="id-card-scan-both-sides.html">身分証の表と裏を1枚のPDFにまとめる方法（運転免許証など）</a></li></ul>
-<p><a href="./">一覧</a></p>
-</section>
-</article>
-</main>
-<footer data-boilerplate><p>© 2026 Andy Jae</p></footer>
-</body>
+<body><p><a href="https://paperkeep-app.pages.dev/ja/guides/receipt-csv-expenses">レシートをExcelにまとめる方法（経費精算用CSV）</a></p></body>
 </html>

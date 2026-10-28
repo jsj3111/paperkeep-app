@@ -2,75 +2,10 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>신분증 사본 주민등록번호 뒷자리 가리고 보내기</title>
-<meta name="description" content="신분증 스캔에서 주민등록번호 뒷자리나 면허번호를 검게 가려 보내는 방법. 가린 부분의 글자는 덮이는 게 아니라 지워져요.">
-<link rel="canonical" href="https://jsj3111.github.io/paperkeep-app/guides/id-card-redact-number.html">
-<link rel="alternate" hreflang="ko" href="https://jsj3111.github.io/paperkeep-app/guides/id-card-redact-number.html">
-<link rel="alternate" hreflang="ja" href="https://jsj3111.github.io/paperkeep-app/ja/guides/id-card-redact-number.html">
-<link rel="alternate" hreflang="en" href="https://jsj3111.github.io/paperkeep-app/en/guides/id-card-redact-number.html">
-<link rel="alternate" hreflang="x-default" href="https://jsj3111.github.io/paperkeep-app/en/guides/id-card-redact-number.html">
-<meta property="og:type" content="article">
-<meta property="og:title" content="신분증 사본 주민등록번호 뒷자리 가리고 보내기">
-<meta property="og:description" content="신분증 스캔에서 주민등록번호 뒷자리나 면허번호를 검게 가려 보내는 방법. 가린 부분의 글자는 덮이는 게 아니라 지워져요.">
-<meta property="og:url" content="https://jsj3111.github.io/paperkeep-app/guides/id-card-redact-number.html">
-<meta name="twitter:card" content="summary">
-<link rel="stylesheet" href="../assets/guides.css">
-<style>:root{--accent:#3B3F9E}</style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "신분증 사본 주민등록번호 뒷자리 가리고 보내기", "description": "신분증 스캔에서 주민등록번호 뒷자리나 면허번호를 검게 가려 보내는 방법. 가린 부분의 글자는 덮이는 게 아니라 지워져요.", "inLanguage": "ko", "dateModified": "2026-10-22", "author": {"@type": "Person", "name": "Andy Jae"}, "publisher": {"@type": "Person", "name": "Andy Jae"}, "mainEntityOfPage": "https://jsj3111.github.io/paperkeep-app/guides/id-card-redact-number.html"}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "홈", "item": "https://jsj3111.github.io/paperkeep-app/"}, {"@type": "ListItem", "position": 2, "name": "문서 스캔 가이드", "item": "https://jsj3111.github.io/paperkeep-app/guides/"}, {"@type": "ListItem", "position": 3, "name": "신분증 사본 주민등록번호 뒷자리 가리고 보내기", "item": "https://jsj3111.github.io/paperkeep-app/guides/id-card-redact-number.html"}]}</script>
+<link rel="canonical" href="https://paperkeep-app.pages.dev/guides/id-card-redact-number">
+<meta http-equiv="refresh" content="0; url=https://paperkeep-app.pages.dev/guides/id-card-redact-number">
 </head>
-<body>
-<main>
-<nav class="crumbs" data-boilerplate><a href="https://jsj3111.github.io/paperkeep-app/">홈</a> › <a href="https://jsj3111.github.io/paperkeep-app/guides/">문서 스캔 가이드</a> › <span>신분증 사본 주민등록번호 뒷자리 가리고 보내기</span></nav>
-<article>
-<h1>신분증 사본 주민등록번호 뒷자리 가리고 보내기</h1>
-<p class="updated" data-boilerplate>최종 수정 2026-10-22 · <span class="badge">Paperkeep Pro 기능</span></p>
-<p class="lead prose">신분증 사본을 요구하는 곳 중에는 주민등록번호 뒷자리까지 필요하지 않은 경우가 많아요. Paperkeep Pro의 &#39;가리기&#39;는 검은 상자를 이미지에 그대로 새기고 그 아래에서 읽은 글자도 문서에서 지워서, 복사나 검색으로 다시 꺼낼 수 없어요.</p>
-
-<section class="prose">
-<h2 data-boilerplate>먼저, iOS 기본 기능으로 하는 방법</h2>
-<ol>
-<li>사진으로 찍은 신분증이라면 사진 앱에서 &#39;편집&#39; → 마크업으로 들어가 굵은 펜을 검정으로 골라 번호를 꼼꼼히 칠할 수 있어요.</li>
-<li>PDF라면 파일 앱의 마크업으로도 도형을 그릴 수 있지만, PDF에 그린 도형은 주석으로 저장돼 다른 PDF 앱에서 선택해 옮기거나 지울 수 있는 경우가 있어요.</li>
-<li>확실하게 하려면 번호를 칠한 사진을 이미지 그대로 보내는 게 기본 앱으로 할 수 있는 가장 단순한 방법이에요.</li>
-</ol>
-</section>
-
-<section class="prose with-shots">
-<h2 data-boilerplate>Paperkeep으로 하는 방법</h2>
-<div class="steps-grid">
-<ol>
-<li>신분증 스캔을 띄운 상태에서 &#39;도구&#39; 메뉴의 &#39;가리기&#39;를 누르면 &#39;마크업&#39; 화면이 열려요.</li>
-<li>가릴 번호 위를 손가락으로 끌면 그 자리에 검은 상자가 그려져요.</li>
-<li>줄 단위로 정확히 고르고 싶다면 안내 문구 옆의 &#39;텍스트 고르기…&#39;를 눌러, 인식된 줄 목록에서 번호가 있는 줄을 체크하고 &#39;가리기&#39;를 눌러요.</li>
-<li>뒷면에도 가릴 내용이 있다면 페이지 화살표로 넘어가 같은 방법으로 가려요. 끝났으면 &#39;완료&#39;를 눌러요.</li>
-<li>공유 버튼이나 &#39;도구&#39; → &#39;내보내기…&#39;로 가린 사본을 보내요.</li>
-</ol>
-<img class="shot" src="img/04_markup.webp" width="300" height="652" alt="Paperkeep 앱 화면">
-</div>
-</section>
-
-<section class="prose">
-<h2 data-boilerplate>이 문서만의 팁</h2>
-<ul>
-<li>가리기 전에 제출처에 어떤 번호가 꼭 필요한지 먼저 물어보세요. 생년월일만 보이면 되는 곳도 많아요.</li>
-<li>가리기는 Paperkeep 안의 문서 자체에 적용돼요. 가리지 않은 사본도 남기려면 먼저 &#39;도구&#39; → &#39;복제&#39;로 사본을 만든 뒤 그쪽을 가리세요.</li>
-<li>상자를 번호보다 조금 넉넉하게 그려야 숫자 끝이 삐져나오지 않아요.</li>
-</ul>
-</section>
-
-<section class="app" data-boilerplate>
-<p class="cta">곧 App Store에 출시돼요.</p>
-</section>
-
-<section class="related" data-boilerplate>
-<h2>다른 가이드</h2>
-<ul><li><a href="id-card-scan-both-sides.html">신분증 사본 앞뒷면을 한 장으로 스캔하기 (아이폰)</a></li><li><a href="id-card-password-pdf.html">신분증 사본 PDF에 암호 걸어서 보내기 (아이폰)</a></li><li><a href="contract-scan-pdf.html">계약서 스캔해서 PDF로 보내기 (아이폰)</a></li><li><a href="contract-sign-pdf.html">아이폰에서 PDF 계약서에 서명하는 방법 (프린트 없이)</a></li><li><a href="contract-extract-pages.html">PDF에서 필요한 페이지만 추출하기 (계약서 일부만 보내기)</a></li></ul>
-<p><a href="./">전체 목록</a></p>
-</section>
-</article>
-</main>
-<footer data-boilerplate><p>© 2026 Andy Jae</p></footer>
-</body>
+<body><p><a href="https://paperkeep-app.pages.dev/guides/id-card-redact-number">신분증 사본 주민등록번호 뒷자리 가리고 보내기</a></p></body>
 </html>

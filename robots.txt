@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://jsj3111.github.io/paperkeep-app/sitemap.xml
-Sitemap: https://jsj3111.github.io/paperkeep-app/sitemap-guides.xml
+Sitemap: https://paperkeep-app.pages.dev/sitemap.xml
+Sitemap: https://paperkeep-app.pages.dev/sitemap-guides.xml
